@@ -112,4 +112,5 @@ do regression.do
 ## Author
 
 **Chhavi Verma** — B.Tech, Electronics & Communication Engineering
+
 Areas of interest: VLSI, RTL Design, Functional Verification, SystemVerilog, Digital Design
