@@ -1,0 +1,542 @@
+# vsim -c work.ram_tb_top "+TESTNAME=ram_constrained_weighted_test" -l logs/ram_constrained_weighted_test.log 
+# Start time: 14:56:04 on Sep 17,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.ram_tb_top_sv_unit(fast)
+# Loading work.ram_tb_top(fast)
+# ** Warning: (vsim-8441) Clocking block output vif.wr_cb.addr is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /ram_tb_top_sv_unit File: ram_write_driver.sv Line: 34
+# ** Warning: (vsim-8441) Clocking block output vif.wr_cb.wdata is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /ram_tb_top_sv_unit File: ram_write_driver.sv Line: 35
+# ** Warning: (vsim-8441) Clocking block output vif.wr_cb.we is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /ram_tb_top_sv_unit File: ram_write_driver.sv Line: 33
+# Loading work.ram_if(fast)
+# 
+# ==================================================
+# [TOP] RUNNING TEST : ram_constrained_weighted_test
+# ==================================================
+# 
+# [ENV] All components built
+# applying reset task
+# WR_MON started
+# READ_MON STARTED
+# Write task [ ref model] started
+# [RM] READ TASK STARTED
+# SB started
+# reset deasserted
+# [ENV] All threads started, DUT reset done
+# [GEN] sending 40 writes
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=7e |wdata =da | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=0 |wdata =9b | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=20 |wdata =57 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=0 |wdata =f3 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=20 |wdata =80 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=2c |wdata =88 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=63 |wdata =f3 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=40 |wdata =73 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=7c |wdata =ae | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=20 |wdata =c7 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=1a |wdata =88 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=5f |wdata =c | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=3f |wdata =48 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=5f |wdata =90 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=5b |wdata =6e | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=23 |wdata =4e | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=1a |wdata =89 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=3f |wdata =58 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=3f |wdata =89 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=5f |wdata =21 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=7f |wdata =a9 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=40 |wdata =76 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=62 |wdata =d9 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=40 |wdata =70 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=24 |wdata =cf | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=60 |wdata =9d | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=41 |wdata =91 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=20 |wdata =99 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=0 |wdata =8e | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=7f |wdata =b | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=60 |wdata =1b | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=e |wdata =79 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=21 |wdata =5d | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=0 |wdata =ff | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=7f |wdata =bb | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=0 |wdata =b4 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=38 |wdata =db | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=62 |wdata =e7 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=20 |wdata =c6 | rdata=0 | valid=0 
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=0 |wdata =ef | rdata=0 | valid=0 
+# we=1
+# addr=126
+# wdata=218
+# 55000 : wr_mon | op=WRITE | addr=7e |wdata =da | rdata=0 | valid=0 
+# [RM] write_addr=7e , data =da , block=3 
+# we=1
+# addr=0
+# wdata=155
+# 75000 : wr_mon | op=WRITE | addr=0 |wdata =9b | rdata=0 | valid=0 
+# [RM] write_addr=0 , data =9b , block=0 
+# we=1
+# addr=32
+# wdata=87
+# 95000 : wr_mon | op=WRITE | addr=20 |wdata =57 | rdata=0 | valid=0 
+# [RM] write_addr=20 , data =57 , block=1 
+# we=1
+# addr=0
+# wdata=243
+# 115000 : wr_mon | op=WRITE | addr=0 |wdata =f3 | rdata=0 | valid=0 
+# [RM] write_addr=0 , data =f3 , block=0 
+# we=1
+# addr=32
+# wdata=128
+# 135000 : wr_mon | op=WRITE | addr=20 |wdata =80 | rdata=0 | valid=0 
+# [RM] write_addr=20 , data =80 , block=1 
+# we=1
+# addr=44
+# wdata=136
+# 155000 : wr_mon | op=WRITE | addr=2c |wdata =88 | rdata=0 | valid=0 
+# [RM] write_addr=2c , data =88 , block=1 
+# we=1
+# addr=99
+# wdata=243
+# 175000 : wr_mon | op=WRITE | addr=63 |wdata =f3 | rdata=0 | valid=0 
+# [RM] write_addr=63 , data =f3 , block=3 
+# we=1
+# addr=64
+# wdata=115
+# 195000 : wr_mon | op=WRITE | addr=40 |wdata =73 | rdata=0 | valid=0 
+# [RM] write_addr=40 , data =73 , block=2 
+# we=1
+# addr=124
+# wdata=174
+# 215000 : wr_mon | op=WRITE | addr=7c |wdata =ae | rdata=0 | valid=0 
+# [RM] write_addr=7c , data =ae , block=3 
+# we=1
+# addr=32
+# wdata=199
+# 235000 : wr_mon | op=WRITE | addr=20 |wdata =c7 | rdata=0 | valid=0 
+# [RM] write_addr=20 , data =c7 , block=1 
+# we=1
+# addr=26
+# wdata=136
+# 255000 : wr_mon | op=WRITE | addr=1a |wdata =88 | rdata=0 | valid=0 
+# [RM] write_addr=1a , data =88 , block=0 
+# we=1
+# addr=95
+# wdata=12
+# 275000 : wr_mon | op=WRITE | addr=5f |wdata =c | rdata=0 | valid=0 
+# [RM] write_addr=5f , data =c , block=2 
+# we=1
+# addr=63
+# wdata=72
+# 295000 : wr_mon | op=WRITE | addr=3f |wdata =48 | rdata=0 | valid=0 
+# [RM] write_addr=3f , data =48 , block=1 
+# we=1
+# addr=95
+# wdata=144
+# 315000 : wr_mon | op=WRITE | addr=5f |wdata =90 | rdata=0 | valid=0 
+# [RM] write_addr=5f , data =90 , block=2 
+# we=1
+# addr=91
+# wdata=110
+# 335000 : wr_mon | op=WRITE | addr=5b |wdata =6e | rdata=0 | valid=0 
+# [RM] write_addr=5b , data =6e , block=2 
+# we=1
+# addr=35
+# wdata=78
+# 355000 : wr_mon | op=WRITE | addr=23 |wdata =4e | rdata=0 | valid=0 
+# [RM] write_addr=23 , data =4e , block=1 
+# we=1
+# addr=26
+# wdata=137
+# 375000 : wr_mon | op=WRITE | addr=1a |wdata =89 | rdata=0 | valid=0 
+# [RM] write_addr=1a , data =89 , block=0 
+# we=1
+# addr=63
+# wdata=88
+# 395000 : wr_mon | op=WRITE | addr=3f |wdata =58 | rdata=0 | valid=0 
+# [RM] write_addr=3f , data =58 , block=1 
+# we=1
+# addr=63
+# wdata=137
+# 415000 : wr_mon | op=WRITE | addr=3f |wdata =89 | rdata=0 | valid=0 
+# [RM] write_addr=3f , data =89 , block=1 
+# we=1
+# addr=95
+# wdata=33
+# 435000 : wr_mon | op=WRITE | addr=5f |wdata =21 | rdata=0 | valid=0 
+# [RM] write_addr=5f , data =21 , block=2 
+# we=1
+# addr=127
+# wdata=169
+# 455000 : wr_mon | op=WRITE | addr=7f |wdata =a9 | rdata=0 | valid=0 
+# [RM] write_addr=7f , data =a9 , block=3 
+# we=1
+# addr=64
+# wdata=118
+# 475000 : wr_mon | op=WRITE | addr=40 |wdata =76 | rdata=0 | valid=0 
+# [RM] write_addr=40 , data =76 , block=2 
+# we=1
+# addr=98
+# wdata=217
+# 495000 : wr_mon | op=WRITE | addr=62 |wdata =d9 | rdata=0 | valid=0 
+# [RM] write_addr=62 , data =d9 , block=3 
+# we=1
+# addr=64
+# wdata=112
+# 515000 : wr_mon | op=WRITE | addr=40 |wdata =70 | rdata=0 | valid=0 
+# [RM] write_addr=40 , data =70 , block=2 
+# we=1
+# addr=36
+# wdata=207
+# 535000 : wr_mon | op=WRITE | addr=24 |wdata =cf | rdata=0 | valid=0 
+# [RM] write_addr=24 , data =cf , block=1 
+# we=1
+# addr=96
+# wdata=157
+# 555000 : wr_mon | op=WRITE | addr=60 |wdata =9d | rdata=0 | valid=0 
+# [RM] write_addr=60 , data =9d , block=3 
+# we=1
+# addr=65
+# wdata=145
+# 575000 : wr_mon | op=WRITE | addr=41 |wdata =91 | rdata=0 | valid=0 
+# [RM] write_addr=41 , data =91 , block=2 
+# we=1
+# addr=32
+# wdata=153
+# 595000 : wr_mon | op=WRITE | addr=20 |wdata =99 | rdata=0 | valid=0 
+# [RM] write_addr=20 , data =99 , block=1 
+# we=1
+# addr=0
+# wdata=142
+# 615000 : wr_mon | op=WRITE | addr=0 |wdata =8e | rdata=0 | valid=0 
+# [RM] write_addr=0 , data =8e , block=0 
+# we=1
+# addr=127
+# wdata=11
+# 635000 : wr_mon | op=WRITE | addr=7f |wdata =b | rdata=0 | valid=0 
+# [RM] write_addr=7f , data =b , block=3 
+# we=1
+# addr=96
+# wdata=27
+# 655000 : wr_mon | op=WRITE | addr=60 |wdata =1b | rdata=0 | valid=0 
+# [RM] write_addr=60 , data =1b , block=3 
+# we=1
+# addr=14
+# wdata=121
+# 675000 : wr_mon | op=WRITE | addr=e |wdata =79 | rdata=0 | valid=0 
+# [RM] write_addr=e , data =79 , block=0 
+# we=1
+# addr=33
+# wdata=93
+# 695000 : wr_mon | op=WRITE | addr=21 |wdata =5d | rdata=0 | valid=0 
+# [RM] write_addr=21 , data =5d , block=1 
+# we=1
+# addr=0
+# wdata=255
+# 715000 : wr_mon | op=WRITE | addr=0 |wdata =ff | rdata=0 | valid=0 
+# [RM] write_addr=0 , data =ff , block=0 
+# we=1
+# addr=127
+# wdata=187
+# 735000 : wr_mon | op=WRITE | addr=7f |wdata =bb | rdata=0 | valid=0 
+# [RM] write_addr=7f , data =bb , block=3 
+# we=1
+# addr=0
+# wdata=180
+# 755000 : wr_mon | op=WRITE | addr=0 |wdata =b4 | rdata=0 | valid=0 
+# [RM] write_addr=0 , data =b4 , block=0 
+# we=1
+# addr=56
+# wdata=219
+# 775000 : wr_mon | op=WRITE | addr=38 |wdata =db | rdata=0 | valid=0 
+# [RM] write_addr=38 , data =db , block=1 
+# we=1
+# addr=98
+# wdata=231
+# 795000 : wr_mon | op=WRITE | addr=62 |wdata =e7 | rdata=0 | valid=0 
+# [RM] write_addr=62 , data =e7 , block=3 
+# we=1
+# addr=32
+# wdata=198
+# 815000 : wr_mon | op=WRITE | addr=20 |wdata =c6 | rdata=0 | valid=0 
+# [RM] write_addr=20 , data =c6 , block=1 
+# we=1
+# addr=0
+# wdata=239
+# 835000 : wr_mon | op=WRITE | addr=0 |wdata =ef | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 40 reads
+# 835000 : [GENERATOR-READ] | op=READ | addr=7e |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=0 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=20 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=0 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=20 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=2c |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=63 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=40 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=7c |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=20 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=1a |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=5f |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=3f |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=5f |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=5b |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=23 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=1a |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=3f |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=3f |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=5f |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=7f |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=40 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=62 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=40 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=24 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=60 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=41 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=20 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=0 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=7f |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=60 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=e |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=21 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=0 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=7f |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=0 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=38 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=62 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=20 |wdata =0 | rdata=0 | valid=0 
+# 835000 : [GENERATOR-READ] | op=READ | addr=0 |wdata =0 | rdata=0 | valid=0 
+# [GEN] done
+# [TEST] Phase 2: forced same-address repeat
+# [GEN] sending 1 writes
+# 835000 : [GENERATOR-WRITE] | op=WRITE | addr=33 |wdata =5a | rdata=0 | valid=0 
+# [RM] write_addr=0 , data =ef , block=0 
+# we=1
+# addr=51
+# wdata=90
+# 855000 : wr_mon | op=WRITE | addr=7e |wdata =5a | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 1 writes
+# 855000 : [GENERATOR-WRITE] | op=WRITE | addr=33 |wdata =5a | rdata=0 | valid=0 
+# [RM] write_addr=7e , data =5a , block=3 
+# valid not generated, waiting for valid
+# 857000 : read_mon | op=READ | addr=7e |wdata =0 | rdata=0 | valid=0 
+# we=1
+# addr=51
+# wdata=90
+# 875000 : wr_mon | op=WRITE | addr=0 |wdata =5a | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 1 writes
+# 875000 : [GENERATOR-WRITE] | op=WRITE | addr=33 |wdata =c3 | rdata=0 | valid=0 
+# [RM] write_addr=0 , data =5a , block=0 
+# valid not generated, waiting for valid
+# 877000 : read_mon | op=READ | addr=0 |wdata =0 | rdata=da | valid=0 
+# we=1
+# addr=51
+# wdata=195
+# 895000 : wr_mon | op=WRITE | addr=20 |wdata =c3 | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 1 writes
+# 895000 : [GENERATOR-WRITE] | op=WRITE | addr=33 |wdata =c3 | rdata=0 | valid=0 
+# [RM] write_addr=20 , data =c3 , block=1 
+# valid not generated, waiting for valid
+# 897000 : read_mon | op=READ | addr=20 |wdata =0 | rdata=ef | valid=0 
+# we=1
+# addr=51
+# wdata=195
+# 915000 : wr_mon | op=WRITE | addr=0 |wdata =c3 | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 0 writes
+# [GEN] all writes done
+# [GEN] SENDING 1 reads
+# 915000 : [GENERATOR-READ] | op=READ | addr=33 |wdata =0 | rdata=0 | valid=0 
+# [GEN] done
+# [TEST] Phase 3: cross-block write/read
+# [GEN] sending 1 writes
+# 915000 : [GENERATOR-WRITE] | op=WRITE | addr=0 |wdata =f0 | rdata=0 | valid=0 
+# [RM] write_addr=0 , data =c3 , block=0 
+# valid not generated, waiting for valid
+# 917000 : read_mon | op=READ | addr=0 |wdata =0 | rdata=c6 | valid=0 
+# we=1
+# addr=0
+# wdata=240
+# 935000 : wr_mon | op=WRITE | addr=20 |wdata =f0 | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 1 reads
+# 935000 : [GENERATOR-READ] | op=READ | addr=60 |wdata =0 | rdata=0 | valid=0 
+# [GEN] done
+# [GEN] sending 1 writes
+# 935000 : [GENERATOR-WRITE] | op=WRITE | addr=1 |wdata =f1 | rdata=0 | valid=0 
+# [RM] write_addr=20 , data =f0 , block=1 
+# valid not generated, waiting for valid
+# 937000 : read_mon | op=READ | addr=20 |wdata =0 | rdata=5a | valid=0 
+# we=1
+# addr=1
+# wdata=241
+# 955000 : wr_mon | op=WRITE | addr=2c |wdata =f1 | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 1 reads
+# 955000 : [GENERATOR-READ] | op=READ | addr=61 |wdata =0 | rdata=0 | valid=0 
+# [GEN] done
+# [GEN] sending 1 writes
+# 955000 : [GENERATOR-WRITE] | op=WRITE | addr=2 |wdata =f2 | rdata=0 | valid=0 
+# [RM] write_addr=2c , data =f1 , block=1 
+# valid not generated, waiting for valid
+# 957000 : read_mon | op=READ | addr=2c |wdata =0 | rdata=c3 | valid=0 
+# we=1
+# addr=2
+# wdata=242
+# 975000 : wr_mon | op=WRITE | addr=63 |wdata =f2 | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 1 reads
+# 975000 : [GENERATOR-READ] | op=READ | addr=62 |wdata =0 | rdata=0 | valid=0 
+# [GEN] done
+# [GEN] sending 1 writes
+# 975000 : [GENERATOR-WRITE] | op=WRITE | addr=3 |wdata =f3 | rdata=0 | valid=0 
+# [RM] write_addr=63 , data =f2 , block=3 
+# valid not generated, waiting for valid
+# 977000 : read_mon | op=READ | addr=63 |wdata =0 | rdata=88 | valid=0 
+# we=1
+# addr=3
+# wdata=243
+# 995000 : wr_mon | op=WRITE | addr=40 |wdata =f3 | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 1 reads
+# 995000 : [GENERATOR-READ] | op=READ | addr=63 |wdata =0 | rdata=0 | valid=0 
+# [GEN] done
+# [RM] write_addr=40 , data =f3 , block=2 
+# valid not generated, waiting for valid
+# 997000 : read_mon | op=READ | addr=40 |wdata =0 | rdata=f3 | valid=0 
+# valid not generated, waiting for valid
+# 1017000 : read_mon | op=READ | addr=7c |wdata =0 | rdata=70 | valid=0 
+# valid not generated, waiting for valid
+# 1037000 : read_mon | op=READ | addr=20 |wdata =0 | rdata=ae | valid=0 
+# valid not generated, waiting for valid
+# 1057000 : read_mon | op=READ | addr=1a |wdata =0 | rdata=f0 | valid=0 
+# valid not generated, waiting for valid
+# 1077000 : read_mon | op=READ | addr=5f |wdata =0 | rdata=89 | valid=0 
+# valid not generated, waiting for valid
+# 1097000 : read_mon | op=READ | addr=3f |wdata =0 | rdata=21 | valid=0 
+# valid not generated, waiting for valid
+# 1117000 : read_mon | op=READ | addr=5f |wdata =0 | rdata=89 | valid=0 
+# valid not generated, waiting for valid
+# 1137000 : read_mon | op=READ | addr=5b |wdata =0 | rdata=21 | valid=0 
+# valid not generated, waiting for valid
+# 1157000 : read_mon | op=READ | addr=23 |wdata =0 | rdata=6e | valid=0 
+# valid not generated, waiting for valid
+# 1177000 : read_mon | op=READ | addr=1a |wdata =0 | rdata=4e | valid=0 
+# valid not generated, waiting for valid
+# 1197000 : read_mon | op=READ | addr=3f |wdata =0 | rdata=89 | valid=0 
+# valid not generated, waiting for valid
+# 1217000 : read_mon | op=READ | addr=3f |wdata =0 | rdata=89 | valid=0 
+# valid not generated, waiting for valid
+# 1237000 : read_mon | op=READ | addr=5f |wdata =0 | rdata=89 | valid=0 
+# valid not generated, waiting for valid
+# 1257000 : read_mon | op=READ | addr=7f |wdata =0 | rdata=21 | valid=0 
+# valid not generated, waiting for valid
+# 1277000 : read_mon | op=READ | addr=40 |wdata =0 | rdata=bb | valid=0 
+# ----------------------------------------
+#           RAM SCOREBOARD REPORT         
+# ----------------------------------------
+# Total writes : 0
+# Total passed : 0
+# Total failed : 0
+# RESULT       : PASS
+# ----------------------------------------
+# 
+# ==================================================
+# [TOP] TEST COMPLETED : ram_constrained_weighted_test
+# ==================================================
+# 
+# valid not generated, waiting for valid
+# 1297000 : read_mon | op=READ | addr=62 |wdata =0 | rdata=f3 | valid=0 
+# all tests completed
+# valid not generated, waiting for valid
+# 1317000 : read_mon | op=READ | addr=40 |wdata =0 | rdata=e7 | valid=0 
+# valid not generated, waiting for valid
+# 1337000 : read_mon | op=READ | addr=24 |wdata =0 | rdata=f3 | valid=0 
+# valid not generated, waiting for valid
+# 1357000 : read_mon | op=READ | addr=60 |wdata =0 | rdata=cf | valid=0 
+# valid not generated, waiting for valid
+# 1377000 : read_mon | op=READ | addr=41 |wdata =0 | rdata=1b | valid=0 
+# valid not generated, waiting for valid
+# 1397000 : read_mon | op=READ | addr=20 |wdata =0 | rdata=91 | valid=0 
+# valid not generated, waiting for valid
+# 1417000 : read_mon | op=READ | addr=0 |wdata =0 | rdata=f0 | valid=0 
+# valid not generated, waiting for valid
+# 1437000 : read_mon | op=READ | addr=7f |wdata =0 | rdata=c3 | valid=0 
+# valid not generated, waiting for valid
+# 1457000 : read_mon | op=READ | addr=60 |wdata =0 | rdata=bb | valid=0 
+# valid not generated, waiting for valid
+# 1477000 : read_mon | op=READ | addr=e |wdata =0 | rdata=1b | valid=0 
+# valid not generated, waiting for valid
+# 1497000 : read_mon | op=READ | addr=21 |wdata =0 | rdata=79 | valid=0 
+# valid not generated, waiting for valid
+# 1517000 : read_mon | op=READ | addr=0 |wdata =0 | rdata=5d | valid=0 
+# valid not generated, waiting for valid
+# 1537000 : read_mon | op=READ | addr=7f |wdata =0 | rdata=c3 | valid=0 
+# valid not generated, waiting for valid
+# 1557000 : read_mon | op=READ | addr=0 |wdata =0 | rdata=bb | valid=0 
+# valid not generated, waiting for valid
+# 1577000 : read_mon | op=READ | addr=38 |wdata =0 | rdata=c3 | valid=0 
+# valid not generated, waiting for valid
+# 1597000 : read_mon | op=READ | addr=62 |wdata =0 | rdata=db | valid=0 
+# valid not generated, waiting for valid
+# 1617000 : read_mon | op=READ | addr=20 |wdata =0 | rdata=e7 | valid=0 
+# valid not generated, waiting for valid
+# 1637000 : read_mon | op=READ | addr=0 |wdata =0 | rdata=f0 | valid=0 
+# valid not generated, waiting for valid
+# 1657000 : read_mon | op=READ | addr=33 |wdata =0 | rdata=c3 | valid=0 
+# valid not generated, waiting for valid
+# 1677000 : read_mon | op=READ | addr=60 |wdata =0 | rdata=0 | valid=0 
+# valid not generated, waiting for valid
+# 1697000 : read_mon | op=READ | addr=61 |wdata =0 | rdata=1b | valid=0 
+# valid not generated, waiting for valid
+# 1717000 : read_mon | op=READ | addr=62 |wdata =0 | rdata=0 | valid=0 
+# valid not generated, waiting for valid
+# 1737000 : read_mon | op=READ | addr=63 |wdata =0 | rdata=e7 | valid=0 
+# 
+# ==============================================
+# RESULT : PASS
+# TEST   : ram_constrained_weighted_test
+# ==============================================
+# 
+# End time: 14:56:06 on Sep 17,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 4
+# 
+# ==============================================
+# REGRESSION SUMMARY
+# ==============================================
+# PASSED : 15
+# FAILED : 0
+# TOTAL  : 15
+# ==============================================
+# 
+# 
+# 
+# ==============================================================
+# FINAL MESSAGE
+# ==============================================================
+# 
+# puts ""
+# 
+# puts "=============================================="
+# ==============================================
+# puts "RUN COMPLETED"
+# RUN COMPLETED
+# puts "=============================================="
+# ==============================================
+# puts ""
+# 

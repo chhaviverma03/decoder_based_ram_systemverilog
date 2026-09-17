@@ -1,0 +1,275 @@
+# vsim -c work.ram_tb_top "+TESTNAME=ram_same_addr_overwrite_test" -l logs/ram_same_addr_overwrite_test.log 
+# Start time: 14:55:44 on Sep 17,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.ram_tb_top_sv_unit(fast)
+# Loading work.ram_tb_top(fast)
+# ** Warning: (vsim-8441) Clocking block output vif.wr_cb.addr is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /ram_tb_top_sv_unit File: ram_write_driver.sv Line: 34
+# ** Warning: (vsim-8441) Clocking block output vif.wr_cb.wdata is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /ram_tb_top_sv_unit File: ram_write_driver.sv Line: 35
+# ** Warning: (vsim-8441) Clocking block output vif.wr_cb.we is not legal in this
+# or another expression.
+#    Time: 0 ps  Iteration: 0  Region: /ram_tb_top_sv_unit File: ram_write_driver.sv Line: 33
+# Loading work.ram_if(fast)
+# 
+# ==================================================
+# [TOP] RUNNING TEST : ram_same_addr_overwrite_test
+# ==================================================
+# 
+# [ENV] All components built
+# applying reset task
+# WR_MON started
+# READ_MON STARTED
+# Write task [ ref model] started
+# [RM] READ TASK STARTED
+# SB started
+# reset deasserted
+# [ENV] All threads started, DUT reset done
+# 
+# [TEST] ===== ram_same_addr_overwrite_test =====
+# [GEN] sending 1 writes
+# 35000 : [GENERATOR-WRITE] | op=WRITE | addr=0 |wdata =aa | rdata=0 | valid=0 
+# we=1
+# addr=0
+# wdata=170
+# 55000 : wr_mon | op=WRITE | addr=0 |wdata =aa | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 1 writes
+# 55000 : [GENERATOR-WRITE] | op=WRITE | addr=0 |wdata =55 | rdata=0 | valid=0 
+# [RM] write_addr=0 , data =aa , block=0 
+# we=1
+# addr=0
+# wdata=85
+# 75000 : wr_mon | op=WRITE | addr=0 |wdata =55 | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 0 writes
+# [GEN] all writes done
+# [GEN] SENDING 1 reads
+# 75000 : [GENERATOR-READ] | op=READ | addr=0 |wdata =0 | rdata=0 | valid=0 
+# [GEN] done
+# [GEN] sending 1 writes
+# 75000 : [GENERATOR-WRITE] | op=WRITE | addr=10 |wdata =55 | rdata=0 | valid=0 
+# [RM] write_addr=0 , data =55 , block=0 
+# we=1
+# addr=16
+# wdata=85
+# 95000 : wr_mon | op=WRITE | addr=0 |wdata =55 | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 1 writes
+# 95000 : [GENERATOR-WRITE] | op=WRITE | addr=10 |wdata =aa | rdata=0 | valid=0 
+# [RM] write_addr=0 , data =55 , block=0 
+# valid not generated, waiting for valid
+# 97000 : read_mon | op=READ | addr=0 |wdata =0 | rdata=0 | valid=0 
+# we=1
+# addr=16
+# wdata=170
+# 115000 : wr_mon | op=WRITE | addr=10 |wdata =aa | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 0 writes
+# [GEN] all writes done
+# [GEN] SENDING 1 reads
+# 115000 : [GENERATOR-READ] | op=READ | addr=10 |wdata =0 | rdata=0 | valid=0 
+# [GEN] done
+# [GEN] sending 1 writes
+# 115000 : [GENERATOR-WRITE] | op=WRITE | addr=1f |wdata =ff | rdata=0 | valid=0 
+# [RM] write_addr=10 , data =aa , block=0 
+# we=1
+# addr=31
+# wdata=255
+# 135000 : wr_mon | op=WRITE | addr=10 |wdata =ff | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 1 writes
+# 135000 : [GENERATOR-WRITE] | op=WRITE | addr=1f |wdata =0 | rdata=0 | valid=0 
+# [RM] write_addr=10 , data =ff , block=0 
+# valid not generated, waiting for valid
+# 137000 : read_mon | op=READ | addr=10 |wdata =0 | rdata=55 | valid=0 
+# we=1
+# addr=31
+# wdata=0
+# 155000 : wr_mon | op=WRITE | addr=1f |wdata =0 | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 0 writes
+# [GEN] all writes done
+# [GEN] SENDING 1 reads
+# 155000 : [GENERATOR-READ] | op=READ | addr=1f |wdata =0 | rdata=0 | valid=0 
+# [GEN] done
+# [GEN] sending 1 writes
+# 155000 : [GENERATOR-WRITE] | op=WRITE | addr=20 |wdata =0 | rdata=0 | valid=0 
+# [RM] write_addr=1f , data =0 , block=0 
+# we=1
+# addr=32
+# wdata=0
+# 175000 : wr_mon | op=WRITE | addr=1f |wdata =0 | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 1 writes
+# 175000 : [GENERATOR-WRITE] | op=WRITE | addr=20 |wdata =ff | rdata=0 | valid=0 
+# [RM] write_addr=1f , data =0 , block=0 
+# valid not generated, waiting for valid
+# 177000 : read_mon | op=READ | addr=1f |wdata =0 | rdata=aa | valid=0 
+# we=1
+# addr=32
+# wdata=255
+# 195000 : wr_mon | op=WRITE | addr=20 |wdata =ff | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 0 writes
+# [GEN] all writes done
+# [GEN] SENDING 1 reads
+# 195000 : [GENERATOR-READ] | op=READ | addr=20 |wdata =0 | rdata=0 | valid=0 
+# [GEN] done
+# [GEN] sending 1 writes
+# 195000 : [GENERATOR-WRITE] | op=WRITE | addr=3f |wdata =f | rdata=0 | valid=0 
+# [RM] write_addr=20 , data =ff , block=1 
+# we=1
+# addr=63
+# wdata=15
+# 215000 : wr_mon | op=WRITE | addr=20 |wdata =f | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 1 writes
+# 215000 : [GENERATOR-WRITE] | op=WRITE | addr=3f |wdata =f0 | rdata=0 | valid=0 
+# [RM] write_addr=20 , data =f , block=1 
+# valid not generated, waiting for valid
+# 217000 : read_mon | op=READ | addr=20 |wdata =0 | rdata=0 | valid=0 
+# we=1
+# addr=63
+# wdata=240
+# 235000 : wr_mon | op=WRITE | addr=3f |wdata =f0 | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 0 writes
+# [GEN] all writes done
+# [GEN] SENDING 1 reads
+# 235000 : [GENERATOR-READ] | op=READ | addr=3f |wdata =0 | rdata=0 | valid=0 
+# [GEN] done
+# [GEN] sending 1 writes
+# 235000 : [GENERATOR-WRITE] | op=WRITE | addr=55 |wdata =f0 | rdata=0 | valid=0 
+# [RM] write_addr=3f , data =f0 , block=1 
+# we=1
+# addr=85
+# wdata=240
+# 255000 : wr_mon | op=WRITE | addr=3f |wdata =f0 | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 1 writes
+# 255000 : [GENERATOR-WRITE] | op=WRITE | addr=55 |wdata =f | rdata=0 | valid=0 
+# [RM] write_addr=3f , data =f0 , block=1 
+# valid not generated, waiting for valid
+# 257000 : read_mon | op=READ | addr=3f |wdata =0 | rdata=ff | valid=0 
+# we=1
+# addr=85
+# wdata=15
+# 275000 : wr_mon | op=WRITE | addr=55 |wdata =f | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 0 writes
+# [GEN] all writes done
+# [GEN] SENDING 1 reads
+# 275000 : [GENERATOR-READ] | op=READ | addr=55 |wdata =0 | rdata=0 | valid=0 
+# [GEN] done
+# [GEN] sending 1 writes
+# 275000 : [GENERATOR-WRITE] | op=WRITE | addr=70 |wdata =a5 | rdata=0 | valid=0 
+# [RM] write_addr=55 , data =f , block=2 
+# we=1
+# addr=112
+# wdata=165
+# 295000 : wr_mon | op=WRITE | addr=55 |wdata =a5 | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 1 writes
+# 295000 : [GENERATOR-WRITE] | op=WRITE | addr=70 |wdata =5a | rdata=0 | valid=0 
+# [RM] write_addr=55 , data =a5 , block=2 
+# valid not generated, waiting for valid
+# 297000 : read_mon | op=READ | addr=55 |wdata =0 | rdata=f0 | valid=0 
+# we=1
+# addr=112
+# wdata=90
+# 315000 : wr_mon | op=WRITE | addr=70 |wdata =5a | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 0 writes
+# [GEN] all writes done
+# [GEN] SENDING 1 reads
+# 315000 : [GENERATOR-READ] | op=READ | addr=70 |wdata =0 | rdata=0 | valid=0 
+# [GEN] done
+# [GEN] sending 1 writes
+# 315000 : [GENERATOR-WRITE] | op=WRITE | addr=7f |wdata =5a | rdata=0 | valid=0 
+# [RM] write_addr=70 , data =5a , block=3 
+# we=1
+# addr=127
+# wdata=90
+# 335000 : wr_mon | op=WRITE | addr=70 |wdata =5a | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 1 writes
+# 335000 : [GENERATOR-WRITE] | op=WRITE | addr=7f |wdata =a5 | rdata=0 | valid=0 
+# [RM] write_addr=70 , data =5a , block=3 
+# valid not generated, waiting for valid
+# 337000 : read_mon | op=READ | addr=70 |wdata =0 | rdata=f | valid=0 
+# we=1
+# addr=127
+# wdata=165
+# 355000 : wr_mon | op=WRITE | addr=7f |wdata =a5 | rdata=0 | valid=0 
+# [GEN] all writes done
+# [GEN] SENDING 0 reads
+# [GEN] done
+# [GEN] sending 0 writes
+# [GEN] all writes done
+# [GEN] SENDING 1 reads
+# 355000 : [GENERATOR-READ] | op=READ | addr=7f |wdata =0 | rdata=0 | valid=0 
+# [GEN] done
+# [RM] write_addr=7f , data =a5 , block=3 
+# valid not generated, waiting for valid
+# 377000 : read_mon | op=READ | addr=7f |wdata =0 | rdata=5a | valid=0 
+# ----------------------------------------
+#           RAM SCOREBOARD REPORT         
+# ----------------------------------------
+# Total writes : 0
+# Total passed : 0
+# Total failed : 0
+# RESULT       : PASS
+# ----------------------------------------
+# 
+# ==================================================
+# [TOP] TEST COMPLETED : ram_same_addr_overwrite_test
+# ==================================================
+# 
+# all tests completed
+# 
+# ==============================================
+# RESULT : PASS
+# TEST   : ram_same_addr_overwrite_test
+# ==============================================
+# 
+# End time: 14:55:47 on Sep 17,2026, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 4
+# 
+# ==============================================
+# RUNNING TEST : ram_toggle_addr_test
+# ==============================================
+# 
