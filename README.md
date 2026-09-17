@@ -20,8 +20,6 @@ A SystemVerilog verification environment for a decoder-based RAM, built and simu
 
 ## Verification Architecture
 
-![Verification Architecture](block_diagram.png)
-
 ```
 TEST → ENVIRONMENT → GENERATOR → [WRITE DRIVER | READ DRIVER] → DUT
                                         ↓               ↓
@@ -36,6 +34,9 @@ TEST → ENVIRONMENT → GENERATOR → [WRITE DRIVER | READ DRIVER] → DUT
 - **Monitors** observe DUT activity
 - **Reference model** computes expected RAM behavior
 - **Scoreboard** compares expected vs. actual results automatically
+
+## Block Diagram
+![Verification Architecture](block_diagram.png)
 
 ## Project Components
 
