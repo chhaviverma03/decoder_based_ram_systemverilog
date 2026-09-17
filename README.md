@@ -20,6 +20,8 @@ A SystemVerilog verification environment for a decoder-based RAM, built and simu
 
 ## Verification Architecture
 
+![Verification Architecture](block_diagram.png)
+
 ```
 TEST → ENVIRONMENT → GENERATOR → [WRITE DRIVER | READ DRIVER] → DUT
                                         ↓               ↓
@@ -27,6 +29,7 @@ TEST → ENVIRONMENT → GENERATOR → [WRITE DRIVER | READ DRIVER] → DUT
                                         ↓
                                   SCOREBOARD ← REFERENCE MODEL
 ```
+
 
 - **Generator** creates transactions, sent via mailboxes to drivers
 - **Drivers** apply transactions to the DUT through a virtual interface (with clocking blocks/modports)
