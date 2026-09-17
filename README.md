@@ -40,7 +40,7 @@ The verification environment checks:
 ---
 
 ## 🏗️ Verification Architecture
-![Uploading image.png…]()
+![Verification Architecture](block_diagram.png)
 
 
 ```text
