@@ -40,6 +40,8 @@ The verification environment checks:
 ---
 
 ## 🏗️ Verification Architecture
+![Uploading image.png…]()
+
 
 ```text
                          ┌──────────────────────────┐
