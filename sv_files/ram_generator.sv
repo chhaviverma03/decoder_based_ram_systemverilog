@@ -39,7 +39,7 @@ class ram_generator;
   endtask
 //run task generate the tracsactionns
   task run(
-    input logic [6:0] wr_addrs [],
+    input logic [6:0] wr_addrs [], //these dynamic array are created in order to save the addr and datas in order to use them later on
     input logic [7:0] wr_datas [],
     input int unsigned n_writes,
     input logic [6:0] rd_addrs [],
