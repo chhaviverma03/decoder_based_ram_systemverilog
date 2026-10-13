@@ -47,7 +47,7 @@ endtask
       wr_mbx.get(txn);
       drive(txn);
       txn_count++;
-      wr_done_mbox.put(1'b1); // to genrator
+      wr_done_mbox.put(1'b1); // written in dut  send tok to genrator
     end
   endtask
 endclass
