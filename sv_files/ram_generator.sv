@@ -3,7 +3,7 @@ class ram_generator;
   local mailbox #(ram_transaction) wr_mbx;
   local mailbox #(ram_transaction) rd_mbx;
   local mailbox #(bit) wr_done_mbox;
-  // Constructor
+  // Constructor-The constructor receives mailbox handles from outside and assigns them to the generator's local handles.
   function new(
     mailbox #(ram_transaction) wr_mbx,
     mailbox #(ram_transaction) rd_mbx,
