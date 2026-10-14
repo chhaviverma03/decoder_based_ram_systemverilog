@@ -18,10 +18,10 @@ class ram_write_monitor;
       if(vif.mon_cb.we==1)
         begin
           txn=new();
-          txn.op=ram_transaction::WRITE;
-          txn.addr=vif.mon_cb.addr;
+          txn.op=ram_transaction::WRITE; 
+          txn.addr=vif.mon_cb.addr; //monitor collecting whats all in the interface via wr_drv
           txn.wdata=vif.mon_cb.wdata;
-          txn.valid=1'b0;
+          txn.valid=1'b0; //WRITE OPERATION
           observed_count ++;
           txn.print("wr_mon");
           //sending to sb and rm
