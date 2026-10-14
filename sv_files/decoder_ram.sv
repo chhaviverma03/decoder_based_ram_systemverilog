@@ -23,7 +23,7 @@ reg [7:0] mem_block3[0:31]; //block 4th
 //main logic
 always@(posedge clk or negedge rst_n) begin
   if(!rst_n) begin
-   for(i=0;i<31;i=i+1) begin
+    for(i=0;i<32;i=i+1) begin
       mem_block0[i]=0;
       mem_block1[i]=0;
       mem_block2[i]=0;
