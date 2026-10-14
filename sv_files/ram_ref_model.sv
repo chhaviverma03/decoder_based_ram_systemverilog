@@ -34,6 +34,7 @@ class ram_ref_model;
       txn.rdata=mem[txn.addr];
       txn.valid=1'b1;
       rd_processed++;
+      sb_exp_mbx.put(txn);
     end
   endtask
 endclass
