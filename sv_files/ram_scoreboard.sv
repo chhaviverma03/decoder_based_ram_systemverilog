@@ -21,7 +21,7 @@ class ram_scoreboard;
     forever begin
       sb_rd_mbox.get(actual);  //actual data i am getting from dut via rd_mon
       sb_exp_mbox.get(expected);
-      check(actual,expected);  //check if 2 are equal or not
+      check(actual,expected);  //check if 2 are equal or not using the check function declared below
     end
   endtask
   function void check(ram_transaction actual,
