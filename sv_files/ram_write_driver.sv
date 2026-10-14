@@ -45,7 +45,7 @@ endtask
   task run; //this will be called by env
     ram_transaction txn;
     forever begin
-      wr_mbx.get(txn);
+      wr_mbx.get(txn);//from genrator
       drive(txn);
       txn_count++;
       wr_done_mbox.put(1'b1); // written in dut  send tok to genrator
