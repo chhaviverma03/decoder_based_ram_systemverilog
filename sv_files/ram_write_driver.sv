@@ -24,6 +24,7 @@ class ram_wr_driver;
     repeat(cycles)
       @(vif.wr_cb);           //  Wait for cycles number of clocking-block events.
                              //set the signals to reset values once, then wait 4 clocks.
+   //after 4 default cycles make rst=1
     vif.rst_n <= 1'b1;
     $display("reset deasserted");
 endtask
