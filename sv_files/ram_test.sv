@@ -145,7 +145,7 @@ rd_addrs[2]=7'h20; rd_addrs[3]=7'h3F;
 rd_addrs[4]=7'h40; rd_addrs[5]=7'h5F;
 rd_addrs[6]=7'h60; rd_addrs[7]=7'h7F;
 
-do_writes_then_reads_diff_addr(addrs, datas, 8, rd_addrs, 8);
+  do_writes_then_reads_diff_addr(addrs, datas, 8, rd_addrs, 8); //default value of randomization_txns=0
 endtask
 
 endclass: ram_block_boundary_test
