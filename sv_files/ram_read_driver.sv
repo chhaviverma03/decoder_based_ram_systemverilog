@@ -23,7 +23,7 @@ mailbox #(ram_transaction) rd_mbox);
         rd_mbox.get(txn);   //from generator , txn instance to read driver
         drive(txn);
         txn_count++;
-        //  rd_done_mbox.put(1'b1);  //to what idk
+        //  rd_done_mbox.put(1'b1);  
       end
     endtask
   endclass
